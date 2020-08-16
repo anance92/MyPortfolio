@@ -6,7 +6,7 @@
 }
 /* Variables */
 :root{
-    --section-bg-color: #adebeb;
+    --section-bg-color: #409fad;
     --font-color: white;
     --font-color2: #CD5C5C;
     --bg-color: #660029;
@@ -41,12 +41,12 @@ header nav ul li a {
     padding: 8px;
 }
 li:hover{
-    border-bottom: solid var(--font-color2);
-    color: var(--font-color2);
+    border-bottom: solid var(--font-color);
+    color: var(--font-color);
 }
 .box:hover{
     opacity: 1.0;
-    border: #daa520;
+    border: var(--font-color);
     border-style: double;
 }
 
