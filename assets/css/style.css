@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* Variables */
+:root{
+    --section-bg-color: #adebeb;
+    --font-color: white;
+    --font-color2: #CD5C5C;
+    --bg-color: #660029;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    padding: 20px 35px;
+    background-color: var(--bg-color);
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+header a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+} 
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 2.4vw;
+    padding: 8px;
+}
+li:hover{
+    border-bottom: solid var(--font-color2);
+    color: var(--font-color2);
+}
+.box:hover{
+    opacity: 1.0;
+    border: #daa520;
+    border-style: double;
+}
+
+/* Main Title */
+.maintitle {
+    padding: 110px;
+    background-image: url("../images/mandala.png");
+    
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.title{
+    font: var(--font-color);
+    font-weight: bold;
+    background-color: var(--bg-color);
+    opacity: 0.6;
+}
+
+/* Styles regarding all of the sections, including flexbox and media queries */
+.info, .projects, .reach{
+    width: 100%;
+    text-align: right;
+    margin: 20px;
+    color: var(--font-color);
+    font-size: 18px;
+    line-height: 1.3;
+
+    /* Flexbox styles start */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+@media screen and (max-width:980px){
+    .box{
+        width: 200px;
+    }
+}
+@media screen and (max-width:768px){
+    .box{
+        width: 200px;
+    }
+    .flex-row{
+        padding: 30px 15px;
+    }
+}
+@media screen and (max-width:575px){
+    .box{
+        width: 200px;
+    }
+}
+.flex-row{
+    padding: 60px;
+    background-color:var(--section-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* First Section "About Me" styles */
+.intro{
+    background-color:var(--section-bg-color);
+    border: solid var(--font-color);
+}
+
+
+
+/* Second Section "My Work" Styles */
+.box{
+    width: 20%;
+    height: 200px;
+    background: var(--bg-color);
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 2.4vw;
+    opacity: .5;
+    
+}
+.box1{
+    width: 40%;
+    height: 400px;
+    background: var(--bg-color);
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 2.4vw;
+    opacity: .5;
+}
+.work{
+    background-color:var(--section-bg-color);
+    font: var(--font-color);
+    border: solid var(--font-color);
+}
+.section-title{
+    text-align: center;
+    margin: 50px;
+}
+
+/* Third Section "Contact Me" styles */
+.reach ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.reach ul li{
+    justify-content: flex-end;
+    padding: 10px;
+}
+.contact{
+    background-color:var(--section-bg-color);
+    font: #daa520;
+    border: solid var(--font-color);
+}
+
+/* Body Styles */
+body {
+    font-family: "Times New Roman", Times, serif;
+}
